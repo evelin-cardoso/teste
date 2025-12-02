@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — Evelin</title>
+  <meta name="description" content="Contato — envie um e-mail para cienciadedados.evelin@gmail.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <header class="site-header small" role="banner">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="index.html">Evelin</a>
+      <button id="nav-toggle-5" aria-expanded="false" aria-controls="nav-list-5">☰</button>
+      <ul id="nav-list-5" class="nav-list">
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="skills.html">Habilidades</a></li>
+        <li><a href="projects.html">Projetos</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Contato</h1>
+    <p>Quer falar sobre um projeto ou oportunidade? Me escreva:</p>
+    <ul>
+      <li>Email: <a href="mailto:cienciadedados.evelin@gmail.com">cienciadedados.evelin@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/feed/">Perfil</a></li>
+      <li>GitHub: <a href="https://github.com/evelin-cardoso">evelin-cardoso</a></li>
+    </ul>
+
+    <section class="contact-panel">
+      <h2>Envie uma mensagem rápida</h2>
+      <form class="contact-form" onsubmit="handleContact(event)">
+        <label>Nome<input id="name" required placeholder="Seu nome" /></label>
+        <label>Email<input id="email" type="email" required placeholder="seu@email.com" /></label>
+        <label>Mensagem<textarea id="message" required placeholder="Escreva uma mensagem"></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Enviar</button>
+        </div>
+      </form>
+      <p class="privacy">Ao enviar, seu e-mail será aberto no cliente de e-mail (funciona sem backend).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Evelin — <a href="https://github.com/evelin-cardoso">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
